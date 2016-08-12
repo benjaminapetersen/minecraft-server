@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#kill $(ps -e | grep minecraft_start.sh | awk '{print $1}')
+# ./minecraft_start.sh
+PID = ps -aux | grep minecraft
+
+kill $PID
+
+./minecraft_start.sh
